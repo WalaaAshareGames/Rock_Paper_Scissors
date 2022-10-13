@@ -2,7 +2,7 @@ import random
 
 
 
-class game :
+class Game :
     def __init__(self):
         self.player=0
 
@@ -12,9 +12,9 @@ class game :
     def get_player(self):
         return self.player
 
-    def game (self,char):
+    def result (self,char):
         count=0
-        if self.get_player()==1:
+        if self.get_player()=="1":
             list=['R','S','P']
             number= random.randint(0,2)
             v=list[number]
@@ -41,23 +41,17 @@ class game :
                 elif (char == "S"):
                     count=0
             return count
-                
-                
-                
 
 
+game =Game()   
 
-        
 
+if __name__ =="__main__" :
+    #test1
+    g1=game()
+    g1.set_player(1)
+    print(g1.get_player())
     
+    #test2
+    print(g1.game('R'))
     
-
-
-
-#test1
-g1=game()
-g1.set_player(1)
-print(g1.get_player())
-
-#test2
-print(g1.game('R'))
