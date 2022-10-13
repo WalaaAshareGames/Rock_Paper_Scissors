@@ -1,8 +1,8 @@
-# LAB - Class xx
+# LAB - Class 06
 
-## Project: Project Name Here
+## Project: Build your first OOP project
 
-### Author: Student/Group Name
+### Author: Walaa' Atiyh && Ashar Almomani
 
 ### Links and Resources
 
