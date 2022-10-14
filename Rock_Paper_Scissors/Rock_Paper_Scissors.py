@@ -37,6 +37,8 @@ def single_player(total):
     while i<3:
    
         char=input("enter your char (R:Rock ,P:Paper ,S:Scissors)\n")
+        if char.upper()!="R" and char.upper()!="P" and char.upper()!="S":
+            return("you should add from this characters (R,S,P)")
         total+=game1.result(char.upper())
         # print(total)
         i +=1
@@ -59,6 +61,8 @@ def tow_player(total):
    
         char1=input(f"{name} char (R:Rock ,P:Paper ,S:Scissors)\n")
         char2=input(f"{partner_name}  char (R:Rock ,P:Paper ,S:Scissors)\n")
+        if char1.upper() not in ["R","S","P"]  or char2.upper() not in ["R","S","P"] : 
+            return("you should add from this characters (R,S,P)")
         total+=game1.result2(char1.upper(),char2.upper())  
         # print(total)
         i +=1

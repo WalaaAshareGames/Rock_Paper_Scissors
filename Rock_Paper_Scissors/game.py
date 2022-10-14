@@ -52,28 +52,21 @@ class Game :
         count2=0 
         if char1==char2:
             count1+=0
-            count2+=0
         if (char1=="S"):
             if(char2=="R"):
                 count1-=10
-                # count2+=10
             elif(char2 == "P"):
                 count1+=10
-                # count2-=10
         if (char1=="P"):
             if(char2=="R"):
                 count1+=10
-                # count2-=10
             elif(char2 == "S"):
                 count1-=10
-                # count2+=10  
         if (char1=="R"):
             if(char2=="P"):
                 count1-=10
-                # count2+=10
             elif(char2 == "S"):
                 count1+=10
-                # count2-=10 
         print (f"player 1 threw '{char1}' and the player 2 threw '{char2}'")
         return count1
           
