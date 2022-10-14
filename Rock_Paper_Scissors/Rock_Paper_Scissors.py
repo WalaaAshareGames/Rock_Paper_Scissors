@@ -31,6 +31,8 @@ def Welcoming() :
     ##############################################################################
     """)
 
+
+#code when we have single player
 def single_player(total):
     name=input("Enter your name  \U0001F929	 \n")
     i=0
@@ -52,7 +54,7 @@ def single_player(total):
         print(f"total point = {total}")
         return(f"*****\U0001F61E \N{loudly crying face}   {name} you lost \U0001F61E \N{loudly crying face}*******")
 
-
+#code when we have two player
 def tow_player(total):
     name=input(" \U00002764 \U00002764 Enter player 1 name \U00002764 \U00002764 \n ")
     partner_name=input(" \U0001F9E1 \U0001F9E1 Enter player 2 name \U0001F9E1 \U0001F9E1 \n ")
@@ -75,6 +77,7 @@ def tow_player(total):
     else :
         print(f"{name}'s points = -{abs(total)} , {partner_name}'s points = {abs(total)}")
         return(f"\U0001F973  \U0001F973 \U0001F973 \U0001F973  {partner_name} is Winner  \U0001F973  \U0001F973 \U0001F973 \U0001F973")
+
 
 if __name__ =="__main__":
     print(Welcoming())
