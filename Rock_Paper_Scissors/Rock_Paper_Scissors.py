@@ -78,7 +78,6 @@ def tow_player(total):
 
 if __name__ =="__main__":
     print(Welcoming())
-    
     while True:
         x=input("do you want to play (yes or no)\n")
         if x.lower()=="yes":
@@ -94,14 +93,4 @@ if __name__ =="__main__":
         else:
             print("no")
             break
-    
-      
-        
-    
-    
-    
-    
-    
-    
-    
     
