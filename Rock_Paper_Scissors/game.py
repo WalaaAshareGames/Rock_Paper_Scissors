@@ -2,7 +2,7 @@ import random
 
 class Game :
     def __init__(self):
-        self.player=0
+        self.player=1
 
 
     def set_player(self,n):
@@ -10,6 +10,14 @@ class Game :
 
     def get_player(self):
         return self.player
+
+
+    def __str__ (self):
+        return 'you are in Rock paper scissors game'
+    def __repr__(self) :
+        rep= self.__class__.__name__
+        return rep 
+
 
     def random(self):
         list=['R','S','P']
@@ -47,7 +55,11 @@ class Game :
         
     def result2 (self,char1,char2):
         count1=0
+
+        #count2=0 
+
         count2=0 
+
         if char1==char2:
             count1+=0
         if (char1=="S"):
@@ -69,6 +81,7 @@ class Game :
         return count1
           
 
+game1 =Game()   
 
 game1 =Game()   
 

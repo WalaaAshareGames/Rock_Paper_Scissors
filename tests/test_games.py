@@ -9,6 +9,28 @@ def play():
     game=Game()
     return game
 
+def test_str(play):
+    actual =play.__str__()
+    expected='you are in Rock paper scissors game'
+    assert actual == expected
+def test_rper(play):
+    actual =play.__repr__()
+    expected='Game'
+    assert actual == expected
+
+def test_result1(play):
+    actual =play.result2('R','R')
+    expected=0
+    assert actual == expected
+def test_result2(play):
+    actual =play.result2('R','S')
+    expected=10
+    assert actual == expected
+def test_result3(play):
+    actual =play.result2('R','P')
+    expected=-10
+    assert actual == expected
+
 
 def test_one(play):
     play.set_player(1)
@@ -24,6 +46,7 @@ def test_three(play):
 
 def test_four(play):
     assert play.result2("R","S")==10
+
 
 
 ## test in Rock_Paper_Scissors.py
