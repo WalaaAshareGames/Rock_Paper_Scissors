@@ -1,31 +1,31 @@
-# LAB - Class 06
+# Class06
 
-## Project: Build your first OOP project
+## Project : Rock Paper Scissors Game
 
-### Author: Walaa' Atiyh && Ashar Almomani
+## Author : Walaa Atiah && Ashar Almomani
 
-### Links and Resources
+### Link and Resources 
 
-- Link01
-- Link02
+1.[gitignore](https://www.toptal.com/developers/gitignore)
 
-### Setup
+2.[repr](https://www.educative.io/answers/what-is-the-repr-method-in-python)
 
-#### `.env` requirements (where applicable)
 
-i.e.
+### Set up 
 
-- `PORT` - Port Number
-- `DATABASE_URL` - URL to the running Postgres instance/db
+1.virtual enviroment _*(python -m venv .venv)*_
 
-#### How to initialize/run your application (where applicable)
+2.recuierments.txt _*(pip freeze > requirements.txt)*_
 
-- e.g. `python main.py`
+3.pytest _*(pip install pytest)*_
 
-#### How to use your library (where applicable)
+### Run the code 
 
-#### Tests
+_*python pythonic_garage_band.py*_
 
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc
+### Run test code 
+
+_*pytest /tests/test_pythonic_garage_band.py
+
+### PR link 
+[PR Link !](https://github.com/Ashar121299/pythonic-garage-band/pull/1)
