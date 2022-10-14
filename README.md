@@ -28,4 +28,4 @@ _*python pythonic_garage_band.py*_
 _*pytest /tests/test_pythonic_garage_band.py
 
 ### PR link 
-[PR Link !](https://github.com/Ashar121299/pythonic-garage-band/pull/1)
+[PR Link !](https://github.com/WalaaAshareGames/Rock_Paper_Scissors/pull/5)
