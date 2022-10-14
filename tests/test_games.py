@@ -31,6 +31,7 @@ def test_result3(play):
     expected=-10
     assert actual == expected
 
+
 def test_one(play):
     play.set_player(1)
     assert play.get_player()==1
@@ -38,6 +39,16 @@ def test_one(play):
 def test_two(play):
     list=['R','S','P']
     assert play.random() in list
+
+def test_three(play):
+    list=[0,10,-10]
+    assert play.result("R") in list
+
+def test_four(play):
+    assert play.result2("R","S")==10
+
+
+
 ## test in Rock_Paper_Scissors.py
 def test_five():
     assert Welcoming()=="""
