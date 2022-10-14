@@ -28,7 +28,7 @@ class Game :
     def result (self,char):
         count=0     
         v=self.random()
-        print (f"you threw '{char}' and the computer threw '{v}'")       
+        print (f"\n you threw '{char}' and the computer threw '{v}'")       
         if (v=="R"):
             if(char=="R"):
                 count=0
@@ -50,7 +50,7 @@ class Game :
                 count-=10
             elif (char == "S"):
                 count=0
-        print(f"you get {count}")
+        print(f" you get {count}\n")
         return count
         
     def result2 (self,char1,char2):
@@ -77,7 +77,8 @@ class Game :
                 count1-=10
             elif(char2 == "S"):
                 count1+=10
-        print (f"player 1 threw '{char1}' and the player 2 threw '{char2}'")
+        print (f"\n player 1 threw '{char1}' and the player 2 threw '{char2}'")
+
         return count1
           
 

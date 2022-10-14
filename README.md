@@ -2,7 +2,14 @@
 
 ## Project : Rock Paper Scissors Game
 
+<table><tr>
+<td> <img src="./image/event-featured-Jen-1571260213.png" alt="drawing" style="width:300px;"/> </td>
+<td> <img src="./image/rsp_800x600.webp"  alt="drawing" style="width:300px;"/> </td>
+</tr></table>
+
 ## Author : Walaa Atiah && Ashar Almomani
+
+
 
 ### Link and Resources 
 

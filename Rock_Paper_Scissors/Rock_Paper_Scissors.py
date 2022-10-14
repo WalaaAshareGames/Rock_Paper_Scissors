@@ -32,11 +32,11 @@ def Welcoming() :
     """)
 
 def single_player(total):
-    name=input("enter your name\n")
+    name=input("Enter your name  \U0001F929	 \n")
     i=0
     while i<3:
    
-        char=input("enter your char (R:Rock ,P:Paper ,S:Scissors)\n")
+        char=input(" Enter your char (R:Rock \U0000270A ,P:Paper \U0001F91A ,S:Scissors \U0000270C	)\n")
         if char.upper()!="R" and char.upper()!="P" and char.upper()!="S":
             return("you should add from this characters (R,S,P)")
         total+=game1.result(char.upper())
@@ -44,52 +44,52 @@ def single_player(total):
         i +=1
     if total==0:
         print(f"total point = {total}")
-        return("**** Draw *****")
+        return("****  \U0001F643 \U0001F605	   Draw  \U0001F643 \U0001F605   ****")
     elif total>0:
         print(f"total point = {total}")
-        return(f"***** {name} is Winner ********")
+        return(f"\U0001F973  \U0001F973  \U0001F973  \U0001F973  {name} is Winner    \U0001F973  \U0001F973 \U0001F973 \U0001F973")
     else :
         print(f"total point = {total}")
-        return(f"****** {name} you lost *********")
+        return(f"*****\U0001F61E \N{loudly crying face}   {name} you lost \U0001F61E \N{loudly crying face}*******")
 
 
 def tow_player(total):
-    name=input("enter player 1 name\n ")
-    partner_name=input("enter player 2 name\n ")
+    name=input(" \U00002764 \U00002764 Enter player 1 name \U00002764 \U00002764 \n ")
+    partner_name=input(" \U0001F9E1 \U0001F9E1 Enter player 2 name \U0001F9E1 \U0001F9E1 \n ")
     i=0
     while i<3:
    
-        char1=input(f"{name} char (R:Rock ,P:Paper ,S:Scissors)\n")
-        char2=input(f"{partner_name}  char (R:Rock ,P:Paper ,S:Scissors)\n")
+        char1=input(f" {name} char (R:Rock \U0000270A ,P:Paper \U0001F91A ,S:Scissors \U0000270C	)\n  ")
+        char2=input(f" {partner_name}  char (R:Rock \U0000270A ,P:Paper \U0001F91A ,S:Scissors \U0000270C	)\n")
         if char1.upper() not in ["R","S","P"]  or char2.upper() not in ["R","S","P"] : 
-            return("you should add from this characters (R,S,P)")
+            return(" you should add from this characters (R,S,P)  \U0001F644 \U0001F644 \U0001F644	      ")
         total+=game1.result2(char1.upper(),char2.upper())  
         # print(total)
         i +=1
     if total==0:
         print(f"{name} point = {total} ,{partner_name} point = {total}")
-        return(f"******** {name} and {partner_name} are Draw ********")
+        return(f" \U0001F643 \U0001F605 {name} and {partner_name} are Draw  \U0001F643 \U0001F605")
     elif total>0:
         print(f"{name}'s points = {abs(total)} ,{partner_name}'s points = -{abs(total)}")
-        return(f" ******* {name} is Winner ********")
+        return(f" \U0001F973 \U0001F973 \U0001F973 \U0001F973  {name} is Winner \U0001F973 \U0001F973 \U0001F973 \U0001F973")
     else :
         print(f"{name}'s points = -{abs(total)} , {partner_name}'s points = {abs(total)}")
-        return(f"****** {partner_name} is Winner ********")
+        return(f"\U0001F973  \U0001F973 \U0001F973 \U0001F973  {partner_name} is Winner  \U0001F973  \U0001F973 \U0001F973 \U0001F973")
 
 if __name__ =="__main__":
     print(Welcoming())
     while True:
-        x=input("do you want to play (yes or no)\n")
+        x=input("\n  Do you want to play (yes or no) ? \U0001F601 \U0001F606	    \n")
         if x.lower()=="yes":
-            numper_player=input("if you want to play with computer enter 1 ,if you want to play with another player enter 2 \n")
+            numper_player=input(" ### If you want to play with computer enter 1 ,If you want to play with another player enter 2 ###  \n")
             total=0
             if numper_player=="1":
                 print(single_player(total))
             elif numper_player=="2":
                 print(tow_player(total))
             else:
-                print("you should enter 1 or 2")
+                print(" You should enter 1 or 2  \U0001F9D0	  ")
                 continue
         else:
-            print("no")
             break
+
