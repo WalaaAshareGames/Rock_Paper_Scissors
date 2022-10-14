@@ -1,6 +1,12 @@
 import random
 
 class Game :
+    '''
+    this class Compare the answers of the players and determine the winner and give him points
+    1 attribute :player
+    7 methode :set_player() ,get_player() ,__str__() ,__repr__(),random(),result(),result2
+    
+    '''
     def __init__(self):
         self.player=1
 
